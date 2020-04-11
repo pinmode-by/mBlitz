@@ -20,7 +20,10 @@ sensors = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
    //% block.loc.ru="Чтение всех датчиков"
    //% weight=90
   export function readSensors() { 
-         
+      let a3:number=0;
+      let a2number=0;
+      let a1:number=0;
+      let a0:number=0;
       for (let i = 0; i < SENS_NUM; i++) {
          let N:number = i
          if (N >= 8) {
