@@ -62,10 +62,11 @@ let sensors: number[] = [];
     
   
     //% block
-    //% snum.min=0 snum.max=16
-   //% snum.defl=3
-    export function sensorValue(snum: number): number {
-        return sensors[snum];
+    //% n.min=0 n.max=15
+   //% n.defl=3
+    export function sensorValue(n: number): number {
+      
+        return sensors[n];
     }
 
   
