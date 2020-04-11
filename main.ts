@@ -66,10 +66,12 @@ let sensors: number[] = [];
    //% n.defl=3
     export function sensorValue(n: number): number {
       
-      if (n<SENS_NUM && n>=0)
+      if (n<SENS_NUM && n>=0){
         return sensors[n];
-      else
+      }
+      else {
         return 0;
+      }
     }
 
   
