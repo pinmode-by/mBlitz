@@ -1,3 +1,6 @@
 {
-"|block" : ""
+"microBlitz.sensorInit|block"   : "Инициализация датчиков N %snum",
+"microBlitz.readSensors|block"  : "Чтение всех датчиков",
+"microBlitz.motorsInit|block"   : "Подготовка моторов"
+  
 }
