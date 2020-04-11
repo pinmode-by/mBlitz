@@ -8,6 +8,8 @@ let sensors: number[] = [];
   
    //% block="sensors Init N %snum"
    //% block.loc.ru="Инициализация датчиков N %snum"
+  //% jsdoc.loc.ru="Установка количества датчиков"
+  //% snum.loc.ru="Количество датчиков"
    //% snum.min=1 snum.max=16
    //% snum.defl=8
    //% weight=90
@@ -18,6 +20,7 @@ let sensors: number[] = [];
 
    //% block="readSensors"
    //% block.loc.ru="Чтение всех датчиков"
+  //% jsdoc.loc.ru="Чтение всех датчиков и сохранение в массив"
    //% weight=90
   export function readSensors() { 
       let a3:number=0;
