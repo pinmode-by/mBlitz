@@ -3,8 +3,8 @@
 namespace microBlitz{
 
 let SENS_NUM:number=8
-let sensors: Array<number>
-sensors = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+let sensors: number[] = [];
+
   
    //% block="sensors Init N %snum"
    //% block.loc.ru="Инициализация датчиков N %snum"
