@@ -61,6 +61,15 @@ let sensors: number[] = [];
   }
     
   
+    //% block
+    //% snum.min=0 snum.max=16
+   //% snum.defl=3
+    export function sensorValue(snum: number): number {
+        return sensors[snum];
+    }
+
+  
+  
    //% block="motorsInit"
    //% block.loc.ru="Прогрев моторов"
    //% weight=90
