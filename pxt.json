@@ -8,8 +8,8 @@
     },
     "files": [
         "README.md",
-        "main.ts"
-        
+        "main.ts",
+        "_locales/ru/mBlitz-string.json"
     ],
     "public": true
 
