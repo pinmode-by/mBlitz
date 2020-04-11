@@ -21,7 +21,7 @@ sensors = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
    //% weight=90
   export function readSensors() { 
       let a3:number=0;
-      let a2number=0;
+      let a2:number=0;
       let a1:number=0;
       let a0:number=0;
       for (let i = 0; i < SENS_NUM; i++) {
