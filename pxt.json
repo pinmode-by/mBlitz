@@ -11,6 +11,7 @@
         "main.ts",
         "_locales/ru/mBlitz-string.json"
     ],
+    "icon": "icon.png",
     "public": true
 
 }
