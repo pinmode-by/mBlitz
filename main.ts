@@ -1,5 +1,6 @@
 
 //% color=#FF0000 weight=8 icon="\uf0fb"
+//% groups='["Sensors", "Motors"]'
 namespace microBlitz{
 
 let SENS_NUM:number=8
@@ -10,6 +11,7 @@ let sensors: number[] = [];
    //% snum.min=1 snum.max=16
    //% snum.defl=8
    //% weight=90
+  //% group="Sensors"
   export function sensorsInit( snum: number) { 
       if (snum > 0 && snum <= 16) {
         SENS_NUM=snum
@@ -19,6 +21,7 @@ let sensors: number[] = [];
 
    //% block="readSensors"
    //% weight=90
+  //% group="Sensors"
   export function readSensors() { 
       let a3:number=0;
       let a2:number=0;
@@ -65,6 +68,7 @@ let sensors: number[] = [];
   //% block.loc.ru="Взять значение датчика N"
     //% n.min=0 n.max=SENS_NUM-1
    //% n.defl=3
+  //% group="Sensors"
     export function sensorValue(n: number): number {
       
       if (n<SENS_NUM && n>=0){
@@ -79,6 +83,7 @@ let sensors: number[] = [];
   
    //% block="motorsInit"
    //% weight=90
+  //% group="Motors"
   export function motorsInit( ) { 
    pins.analogSetPeriod(AnalogPin.P9, 500)
     pins.analogSetPeriod(AnalogPin.P16, 500)
@@ -95,6 +100,7 @@ let sensors: number[] = [];
     //% left.min=-1023 left.max=1023
     //% right.min=-1023 right.max=1023
     //% weight=90
+  //% group="Motors"
   export function drive( left: number,  right: number): void {
     let r = right
     let l = left
@@ -123,6 +129,7 @@ let sensors: number[] = [];
     
   //% block="motorsStop "
   //% weight=90
+  //% group="Motors"
   export function motorsStop( ) { 
     pins.digitalWritePin(DigitalPin.P12, 1)
     pins.digitalWritePin(DigitalPin.P13, 1)  
