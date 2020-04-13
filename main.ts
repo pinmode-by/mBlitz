@@ -7,20 +7,17 @@ let sensors: number[] = [];
 
   
    //% block="sensorsInit N %snum"
-   //% block.loc.ru="Инициализация датчиков N %snum"
-  //% jsdoc.loc.ru="Установка количества датчиков"
-  //% snum.loc.ru="Количество датчиков"
    //% snum.min=1 snum.max=16
    //% snum.defl=8
    //% weight=90
   export function sensorsInit( snum: number) { 
-      SENS_NUM=snum
+      if (snum > 0 && snum <= 16) {
+        SENS_NUM=snum
+      }
   }
     
 
    //% block="readSensors"
-   //% block.loc.ru="Чтение всех датчиков"
-  //% jsdoc.loc.ru="Чтение всех датчиков и сохранение в массив"
    //% weight=90
   export function readSensors() { 
       let a3:number=0;
@@ -81,7 +78,6 @@ let sensors: number[] = [];
   
   
    //% block="motorsInit"
-   //% block.loc.ru="Прогрев моторов"
    //% weight=90
   export function motorsInit( ) { 
    pins.analogSetPeriod(AnalogPin.P9, 500)
@@ -96,7 +92,6 @@ let sensors: number[] = [];
   }
     
     //% block="Drive  left %left  right %right"
-    //% block.loc.ru="Движение  левый %left  правый %right"
     //% left.min=-1023 left.max=1023
     //% right.min=-1023 right.max=1023
     //% weight=90
@@ -127,7 +122,6 @@ let sensors: number[] = [];
   }
     
   //% block="motorsStop "
-  //% block.loc.ru="Остановка моторов"
   //% weight=90
   export function motorsStop( ) { 
     pins.digitalWritePin(DigitalPin.P12, 1)
