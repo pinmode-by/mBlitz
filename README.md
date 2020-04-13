@@ -1,7 +1,6 @@
-# Sensors for uBlitz 2 (Line following robot)
+# uBlitz 2 (Line following robot)
 
 ## License
-
 MIT
 
 ```package
