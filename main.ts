@@ -21,10 +21,10 @@ let sensors: number[] = [];
   }
     
 
-  //% blockId=read_Sensors block="readSensors"
+  //% block="readSensors"
   //% weight=90
   //% group="Sensors"
-  export function read_Sensors() { 
+  export function readSensors() { 
       let a3:number=0;
       let a2:number=0;
       let a1:number=0;
