@@ -6,7 +6,7 @@ let SENS_NUM:number=8
 let sensors: number[] = [];
 
   
-   //% block="sensors Init N %snum"
+   //% block="sensorsInit N %snum"
    //% block.loc.ru="Инициализация датчиков N %snum"
   //% jsdoc.loc.ru="Установка количества датчиков"
   //% snum.loc.ru="Количество датчиков"
