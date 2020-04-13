@@ -16,6 +16,9 @@ let sensors: number[] = [];
       if (snum > 0 && snum <= 16) {
         SENS_NUM=snum
       }
+    else {
+      SENS_NUM=8
+    }  
   }
     
 
