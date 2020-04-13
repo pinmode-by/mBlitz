@@ -1,7 +1,12 @@
 # Sensors for uBlitz 2 (Line following robot)
 
 ## License
+
 MIT
+
+```package
+microBlitz=https://github.com/pinmode-by/mBlitz
+```
 
 ## Supported targets
 
