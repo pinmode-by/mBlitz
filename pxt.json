@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/ru/mBlitz-string.json"
+        "_locales/ru/mBlitz-strings.json"
     ],
     "icon": "icon.png",
     "public": true
