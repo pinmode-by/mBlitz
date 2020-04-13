@@ -7,25 +7,24 @@ let SENS_NUM:number=8
 let sensors: number[] = [];
 
   
-   //% block="sensorsInit N %snum"
-   //% snum.min=1 snum.max=16
-   //% snum.defl=8
-   //% weight=90
+  //% block="sensorsInit N %snum"
+  //% snum.min=1 snum.max=16
+  //% snum.defl=8
+  //% weight=90
   //% group="Sensors"
   export function sensorsInit( snum: number) { 
-      if (snum > 0 && snum <= 16) {
-        SENS_NUM=snum
-      }
-    else {
+    if (snum > 0 && snum <= 16) {
+      SENS_NUM=snum
+    } else {
       SENS_NUM=8
     }  
   }
     
 
-   //% block="readSensors"
-   //% weight=90
+  //% blockId=read_Sensors block="readSensors"
+  //% weight=90
   //% group="Sensors"
-  export function readSensors() { 
+  export function read_Sensors() { 
       let a3:number=0;
       let a2:number=0;
       let a1:number=0;
@@ -67,10 +66,10 @@ let sensors: number[] = [];
   }
     
   
-    //% block
+  //% block
   //% block.loc.ru="Взять значение датчика N"
-    //% n.min=0 n.max=SENS_NUM-1
-   //% n.defl=3
+  //% n.min=0 n.max=SENS_NUM-1
+  //% n.defl=3
   //% group="Sensors"
     export function sensorValue(n: number): number {
       
