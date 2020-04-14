@@ -3,6 +3,6 @@
 "microBlitz.readSensors|block": "Чтение всех датчиков",
   
 "microBlitz.motorsInit|block": "Подключение и подготовка моторов",
-"microBlitz.Drive|block": "Скорость левого %left  правого %right моторов",
+"microBlitz.drive|block": "Скорость левого %left  правого %right моторов",
 "microBlitz.motorsStop|block": "Остановка моторов"  
 }
