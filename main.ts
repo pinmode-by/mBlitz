@@ -89,7 +89,8 @@ let sensors: number[] = [];
   //% blockGap=8
   //% group="Motors"
   export function motorsInit( ) { 
-   pins.analogSetPeriod(AnalogPin.P9, 500)
+    led.enable(false)
+    pins.analogSetPeriod(AnalogPin.P9, 500)
     pins.analogSetPeriod(AnalogPin.P16, 500)
     pins.analogWritePin(AnalogPin.P9, 0)
     pins.analogWritePin(AnalogPin.P16, 0)
