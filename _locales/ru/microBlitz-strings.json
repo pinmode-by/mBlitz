@@ -2,6 +2,7 @@
 "microBlitz.sensorsInit|block": "Инициализация  %snum датчиков",  
 "microBlitz.readSensors|block": "Чтение всех датчиков",
   
-"microBlitz.motorsInit|block": "Подготовка моторов"
+"microBlitz.motorsInit|block": "Подготовка моторов",
+"microBlitz.drive|block": "Скорость левого %left  правого %right моторов",
 "microBlitz.motorsStop|block": "Остановка моторов"  
 }
