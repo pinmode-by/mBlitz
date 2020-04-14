@@ -1,6 +1,7 @@
 {
 "microBlitz.sensorsInit|block": "Подключение %snum датчиков",  
 "microBlitz.readSensors|block": "Чтение всех датчиков",
+"microBlitz.sensorValue|block": "Значение датчика %n", 
   
 "microBlitz.motorsInit|block": "Подключение и подготовка моторов",
 "microBlitz.drive|block": "Скорость левого %left  правого %right моторов",
