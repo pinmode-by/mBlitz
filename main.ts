@@ -11,6 +11,7 @@ let sensors: number[] = [];
   //% snum.min=1 snum.max=16
   //% snum.defl=8
   //% weight=90
+  //% blockGap=8
   //% group="Sensors"
   export function sensorsInit( snum: number) { 
     if (snum > 0 && snum <= 16) {
@@ -23,6 +24,7 @@ let sensors: number[] = [];
 
   //% block="readSensors"
   //% weight=90
+  //% blockGap=8
   //% group="Sensors"
   export function readSensors() { 
       let a3:number=0;
@@ -67,7 +69,6 @@ let sensors: number[] = [];
     
   
   //% block
-  //% block.loc.ru="Взять значение датчика N"
   //% n.min=0 n.max=SENS_NUM-1
   //% n.defl=3
   //% group="Sensors"
@@ -85,6 +86,7 @@ let sensors: number[] = [];
   
    //% block="motorsInit"
    //% weight=90
+  //% blockGap=8
   //% group="Motors"
   export function motorsInit( ) { 
    pins.analogSetPeriod(AnalogPin.P9, 500)
@@ -98,10 +100,11 @@ let sensors: number[] = [];
     pins.digitalWritePin(DigitalPin.P15, 1)  
   }
     
-    //% block="Drive  left %left  right %right"
+    //% block="drive  left %left  right %right"
     //% left.min=-1023 left.max=1023
     //% right.min=-1023 right.max=1023
     //% weight=90
+  //% blockGap=8
   //% group="Motors"
   export function drive( left: number,  right: number): void {
     let r = right
@@ -131,6 +134,7 @@ let sensors: number[] = [];
     
   //% block="motorsStop "
   //% weight=90
+  //% blockGap=8
   //% group="Motors"
   export function motorsStop( ) { 
     pins.digitalWritePin(DigitalPin.P12, 1)
