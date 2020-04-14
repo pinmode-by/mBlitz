@@ -1,6 +1,6 @@
 
 //% color=#FF0000 weight=8 icon="\uf0fb"
-//% groups='["Sensors", "Motors"]'
+//% groups='["Sensors", "Motors", "OLED", "IR"]'
 namespace microBlitz{
 
 let SENS_NUM:number=8
