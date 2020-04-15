@@ -7,7 +7,7 @@
 "microBlitz.drive|block": "Скорость левого %left  правого %right моторов",
 "microBlitz.motorsStop|block": "Остановка моторов",  
   
- "microBlitz.oledInit|block": "Подключение экрана", 
+ "microBlitz.oledInit|block": "Подключение экрана %t", 
  "microBlitz.clear|block": "Очистка экрана", 
- "microBlitz.drawText|block": "Показать на экране текст"  
+ "microBlitz.drawText|block": "Показать на экране: смещение %x ряд %line текст %str"  
 }
