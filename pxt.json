@@ -9,6 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
+        "oled.ts",
         "_locales/ru/microBlitz-strings.json"
     ],
     "icon": "icon.png",
