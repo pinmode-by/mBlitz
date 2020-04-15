@@ -308,6 +308,8 @@ namespace microBlitz{
     
     //% block="Oled Init %t"
     //% weight=100
+     //% blockGap=8
+    //% group="OLED"
     export function oledInit(t: OledType){
         if (t == OledType.oled12864){
             height = 64;
@@ -343,9 +345,7 @@ namespace microBlitz{
         fill(0)
     }
 
-    //% block="Oled Fill %pattern"
-    //% weight=99
-    export function fill(pattern: number) {
+        export function fill(pattern: number) {
         let pages = height / 8;
         let xpos0 = 0
         let xpos1 = width - 1
@@ -368,6 +368,8 @@ namespace microBlitz{
 
     //% block="Oled Clear"
     //% weight=99
+     //% blockGap=8
+    //% group="OLED"
     export function clear() {
         fill(0)
     }
@@ -381,6 +383,8 @@ namespace microBlitz{
     //% x.min=0 x.max=127
     //% line.min=0 line.max=3
     //% weight=99
+     //% blockGap=8
+    //% group="OLED"
     export function drawText(x: number, line: number, str: string){
         let numchar = str.length;
         let maxchar = Math.floor((width-1-x)/8)
