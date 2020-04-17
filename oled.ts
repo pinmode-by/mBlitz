@@ -301,14 +301,14 @@ namespace microBlitz{
 
     export enum OledType {
         //% blockId="oled12832" block="128x32 0.91"
-        oled12832 = 0,
+        oled12832 = 1,
         //% blockId="oled12864" block="128x64 0.96"
-        oled12864 = 1,
+        oled12864 = 0
     }
     
     //% block="Oled Init %t"
     //% weight=100
-     //% blockGap=8
+    //% blockGap=8
     //% group="OLED"
     export function oledInit(t: OledType){
         if (t == OledType.oled12864){
