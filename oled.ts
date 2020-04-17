@@ -285,7 +285,7 @@ namespace microBlitz{
     }
     
     let width: number = 128;
-    let height: number = 64;
+    let height: number = 32;
 
         
     function i2ccmd(value: number) {
@@ -311,8 +311,8 @@ namespace microBlitz{
      //% blockGap=8
     //% group="OLED"
     export function oledInit(t: OledType){
-        if (t == OledType.oled12832){
-            height = 32;
+        if (t == OledType.oled12864){
+            height = 64;
         }
 
         let cmdList = [
