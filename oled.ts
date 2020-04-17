@@ -301,9 +301,9 @@ namespace microBlitz{
 
     export enum OledType {
         //% blockId="oled12832" block="128x32 0.91"
-        oled12832 = 1,
+        oled12832 = 0,
         //% blockId="oled12864" block="128x64 0.96"
-        oled12864 = 0
+        oled12864 = 1
     }
     
     //% block="Oled Init %t"
