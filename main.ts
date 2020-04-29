@@ -83,6 +83,24 @@ let sensors: number[] = [];
     }
 
   
+    //% block="calibrate sensors with min %minV  max %MaxV"
+    //% minV.min=0 minV.max=900
+    //% minV.defl=80
+    //% maxV.min=100 maxV.max=1000
+    //% maxV.defl=800
+    //% weight=90
+  //% blockGap=8
+  //% group="Sensors"
+  export function calibrateWith( minV: number,  maxV: number): void {
+    let delta=maxV-minV
+    if (delta>0) {
+      for (let i = 0; i < SENS_NUM; i++) {
+        sensors[i]=1000*(sensors[i]-minV)/delta
+      }  
+    }
+    
+  }
+  
   
    //% block="motorsInit"
    //% weight=90
