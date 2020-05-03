@@ -5,6 +5,7 @@ namespace microBlitz{
 
 let SENS_NUM:number=8
 let sensors: number[] = [];
+let W:number[]=[];
 
   
   //% block="sensorsInit N %snum"
@@ -16,8 +17,10 @@ let sensors: number[] = [];
   export function sensorsInit( snum: number) { 
     if (snum > 0 && snum <= 16) {
       SENS_NUM=snum
+      let delta=(snum/2)
     } else {
       SENS_NUM=8
+      
     }  
   }
     
