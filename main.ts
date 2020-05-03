@@ -17,10 +17,24 @@ let W:number[]=[];
   export function sensorsInit( snum: number) { 
     if (snum > 0 && snum <= 16) {
       SENS_NUM=snum
-      let delta=(snum/2)
+      let START=0
+      if ((SENS_NUM % 2)==1){
+        START=(1-SENS_NUM)/2
+        for (let i=0; i<SENS_NUM; i++){
+          W[i]=START+i
+        }
+      }
+      else {
+        START=1-SENS_NUM
+        for (let i=0; i<SENS_NUM; i++){
+          W[i]=START+i*2
+        }
+      }
     } else {
       SENS_NUM=8
-      
+      for (let i=0; i<8; i++){
+          W[i]=-7+i*2
+        }
     }  
   }
     
