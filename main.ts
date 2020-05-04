@@ -140,10 +140,11 @@ let lastPosition=0
         if (lastPosition>0) {return W[SENS_NUM-1]}
         else return W[0]
       }  
-    
+    if (SUM_S>0) {
         lastPosition=SUM_SW/SUM_S
         return lastPosition
-      
+    }
+      else return 0
     }
   
   
