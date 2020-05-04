@@ -3,6 +3,8 @@
 "microBlitz.readSensors|block": "Чтение всех датчиков",
 "microBlitz.sensorValue|block": "Значение датчика %n", 
   
+"microBlitz.allSensorValue|block": "Значение всех датчиков", 
+  
 "microBlitz.motorsInit|block": "Подключение и подготовка моторов",
 "microBlitz.drive|block": "Скорость левого %left  правого %right моторов",
 "microBlitz.motorsStop|block": "Остановка моторов",  
