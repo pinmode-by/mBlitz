@@ -6,6 +6,7 @@ namespace microBlitz{
 let SENS_NUM:number=8
 let sensors: number[] = [];
 let W: number[]=[];
+let lastPosition=0
 
   
   //% block="sensorsInit N %snum"
@@ -123,16 +124,26 @@ let W: number[]=[];
     export function allSensorValue(): number {
       let SUM_SW=0
       let SUM_S=0
+      let value=0
+      let onLine=0
       for (let i = 0; i < SENS_NUM; i++) {
-        SUM_SW=SUM_SW+sensors[i]*W[i]
-        SUM_S=SUM_S+sensors[i]
+        value=sensors[i]
+        if (value>50){
+        SUM_SW=SUM_SW+value*W[i]
+        SUM_S=SUM_S+value
+        }
+        if (value>200){
+          onLine=1
+        }
       }
-      if (SUM_S>=0){
-        return SUM_SW/SUM_S
-      }
-      else {
-        return 0;
-      }
+      if (onLine=0){
+        if (lastPosition>0) {return W[SENS_NUM-1]}
+        else return W[0]
+      }  
+    
+        lastPosition=SUM_SW/SUM_S
+        return lastPosition
+      
     }
   
   
