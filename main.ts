@@ -136,7 +136,7 @@ let lastPosition=0
           onLine=1
         }
       }
-      if (onLine=0){
+      if (onLine==0){
         if (lastPosition>0) {return W[SENS_NUM-1]}
         else return W[0]
       }  
