@@ -1,8 +1,7 @@
 {
 "microBlitz.sensorsInit|block": "Подключение %snum датчиков",  
 "microBlitz.readSensors|block": "Чтение всех датчиков",
-"microBlitz.sensorValue|block": "Значение датчика %n", 
-  
+"microBlitz.sensorValue|block": "Значение датчика %n",
 "microBlitz.allSensorValue|block": "Значение всех датчиков", 
   
 "microBlitz.motorsInit|block": "Подключение и подготовка моторов",
