@@ -129,8 +129,8 @@ let lastPosition=0
       for (let i = 0; i < SENS_NUM; i++) {
         value=sensors[i]
         if (value>50){
-        SUM_SW=SUM_SW+value*W[i]
-        SUM_S=SUM_S+value
+          SUM_SW=SUM_SW+value*W[i]
+          SUM_S=SUM_S+value
         }
         if (value>200){
           onLine=1
@@ -145,7 +145,7 @@ let lastPosition=0
         return lastPosition
     }
       else return 0
-    }
+  }
   
   
    //% block="motorsInit"
