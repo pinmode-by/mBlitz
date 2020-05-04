@@ -6,7 +6,7 @@ namespace microBlitz{
 let SENS_NUM:number=8
 let sensors: number[] = [];
 let W: number[]=[];
-let lastPosition=0
+let lastPosition:number=0
 
   
   //% block="sensorsInit N %snum"
@@ -18,7 +18,7 @@ let lastPosition=0
   export function sensorsInit( snum: number) { 
     if (snum > 0 && snum <= 16) {
       SENS_NUM=snum
-      let START=0
+      let START:number=0
       if ((SENS_NUM % 2)==1){
         START=(1-SENS_NUM)/2
         for (let i=0; i<SENS_NUM; i++){
@@ -110,7 +110,7 @@ let lastPosition=0
   //% blockGap=8
   //% group="Sensors"
   export function calibrateWith( minV: number,  maxV: number): void {
-    let delta=maxV-minV
+    let delta:number=maxV-minV
     if (delta>0) {
       for (let i = 0; i < SENS_NUM; i++) {
         sensors[i]=1000*(sensors[i]-minV)/delta
@@ -122,10 +122,11 @@ let lastPosition=0
   //% block
   //% group="Sensors"
     export function allSensorValue(): number {
-      let SUM_SW=0
-      let SUM_S=0
-      let value=0
-      let onLine=0
+      let SUM_SW:number=0
+      let SUM_S:number=0
+      let value:number=0
+      let onLine:number=0
+      
       for (let i = 0; i < SENS_NUM; i++) {
         value=sensors[i]
         if (value>50){
@@ -136,6 +137,7 @@ let lastPosition=0
           onLine=1
         }
       }
+      
       if (onLine==0){
         if (lastPosition>0) {return W[SENS_NUM-1]}
         else return W[0]
