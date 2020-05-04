@@ -87,7 +87,7 @@ let lastPosition:number=0
     
   
   //% block
-  //% n.min=0 n.max=SENS_NUM-1
+  //% n.min=0 n.max=7
   //% n.defl=3
   //% group="Sensors"
     export function sensorValue(n: number): number {
