@@ -2,6 +2,7 @@
 "microBlitz.sensorsInit|block": "Подключение %snum датчиков",  
 "microBlitz.readSensors|block": "Чтение всех датчиков",
 "microBlitz.sensorValue|block": "Значение датчика %n",
+"microBlitz.calibrateWith|block": "Калибровать все датчики: белое %MinV черное %maxV", 
 "microBlitz.allSensorValue|block": "Значение всех датчиков", 
   
 "microBlitz.motorsInit|block": "Подключение и подготовка моторов",
