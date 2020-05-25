@@ -1,4 +1,4 @@
-# uBlitz 2 (Line following robot)
+# uBlitz 2 (Line following robot based on BBC micro:bit)
 
 ## License
 MIT
